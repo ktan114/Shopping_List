@@ -4,7 +4,10 @@
   "description": "Shopping List App built with MERN stack",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "client-install": "npm install --prefix client",
+    "start": "nodemon server.js",
+    "client": "yarn start --prefix client",
+    "dev": "concurrently \"yarn start\" \"yarn client\" "
   },
   "dependencies": {
     "concurrently": "^3.6.1",
