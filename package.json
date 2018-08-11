@@ -1,0 +1,31 @@
+{
+  "name": "Shopping_List",
+  "version": "1.0.0",
+  "description": "Shopping List App built with MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktan114/Shopping_List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktan114/Shopping_List/issues"
+  },
+  "homepage": "https://github.com/ktan114/Shopping_List#readme"
+}
