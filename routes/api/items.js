@@ -35,4 +35,21 @@ router.post('/', (req, res) => {
     })
 });
 
+// @route   DELETE api/items/:id
+// @desc    Delete a Item
+// @access  Public
+
+router.delete('/:id', (req, res) => {
+    const id = req.params.id;
+
+    Item
+    .findByIdAndRemove(id)
+    .then(response => {
+        res.status(200).json({ message: "Successfully Deleted"})
+    })
+    .catch(err => {
+        res.status(404).json({ Error: err })
+    })
+});
+
 module.exports = router;
