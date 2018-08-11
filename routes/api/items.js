@@ -16,4 +16,23 @@ router.get('/', (req, res) => {
     .catch(err => res.status(500).json({ Error: err }))
 });
 
+// @route   POST api/items
+// @desc    Create Item
+// @access  Public
+
+router.post('/', (req, res) => {
+    const newItem = new Item({
+        name: req.body.name
+    })
+    
+    newItem
+    .save()
+    .then(item => {
+        res.status(201).json(item)
+    })
+    .catch(err => {
+        res.status(500).json({ Error: err })
+    })
+});
+
 module.exports = router;
