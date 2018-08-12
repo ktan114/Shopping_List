@@ -6,7 +6,7 @@
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "nodemon server.js",
-    "client": "yarn start --prefix client",
+    "client": "npm start --prefix client",
     "dev": "concurrently \"yarn start\" \"yarn client\" "
   },
   "dependencies": {
