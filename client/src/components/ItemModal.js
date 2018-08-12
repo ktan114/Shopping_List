@@ -84,4 +84,3 @@ export default connect(
   mapStateToProps,
   { addItem }
 )(ItemModal);
-mapStateToProps, addItem;
