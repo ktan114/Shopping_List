@@ -2,7 +2,7 @@
   "name": "Shopping_List",
   "version": "1.0.0",
   "description": "Shopping List App built with MERN stack",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "nodemon server.js",
